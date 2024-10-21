@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START | TOP</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/destyle.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/top.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="flex">
+      <h1>
+        <a href="index.html"
+          ><img class="header__logo" src="images/logo.svg" alt="START"
+        /></a>
+      </h1>
+      <nav class="nav_pc">
+        <ul class="header__contents flex">
+          <li>
+            <p class="header__item header__item--pink">
+              <a href="index.html">ホーム</a>
+            </p>
+          </li>
+          <li>
+            <p class="header__item"><a href="message.html">メッセージ</a></p>
+          </li>
+          <li>
+            <p class="header__item"><a href="company.html">会社概要</a></p>
+          </li>
+        </ul>
+      </nav>
+      <!-- ハンバーガーボタン -->
+      <div class="btn"><span></span><span></span><span></span></div>
+      <nav class="nav_sp">
+        <ul class="nav__content--sp">
+          <li>
+            <p class="nav____content__item--sp header__item">
+              <a href="index.html">ホーム</a>
+            </p>
+          </li>
+          <li>
+            <p class="nav____content__item--sp">
+              <a href="message.html">メッセージ</a>
+            </p>
+          </li>
+          <li>
+            <p class="nav____content__item--sp">
+              <a href="company.html">会社概要</a>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="mv">
+        <p class="start">START</p>
+        <p class="start__text">仕事に最高のスタートを。</p>
+      </div>
+      <section class="section--news flex inner">
+        <h2>ニュース</h2>
+        <dl class="section__content--news">
+          <dt class="roboto-medium">2030.02.10</dt>
+          <dd>コーポレートサイトをリニューアルしました。</dd>
+
+          <dt class="roboto-medium">2030.02.08</dt>
+          <dd>採用を強化中です！一緒に働きませんか？</dd>
+
+          <dt class="roboto-medium">2030.02.02</dt>
+          <dd>
+            人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！
+          </dd>
+        </dl>
+      </section>
+
+      <section class="section--servis inner">
+        <h2>サービス</h2>
+        <div class="bg-service roboto-bold"><p>SERVICE</p></div>
+        <div class="section__div--servis flex">
+          <!-- 人材紹介業 -->
+          <div class="section__div__content--servis">
+            <span class="material-icons"> work </span>
+            <h3>人材紹介業</h3>
+            <p class="section__div__content__text">
+              新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
+            </p>
+          </div>
+          <!-- スクール事業 -->
+          <div class="section__div__content--servis">
+            <span class="material-icons city"> location_city </span>
+            <h3>スクール事業</h3>
+            <p class="section__div__content__text">
+              オンラインでWeb制作を学べるスクールを運営しています。
+            </p>
+          </div>
+          <!-- Webメディア運営 -->
+          <div class="section__div__content--servis">
+            <span class="material-icons"> desktop_windows </span>
+            <h3>Webメディア運営</h3>
+            <p class="section__div__content__text">
+              人事系メディアやWebデザイン関連のメディアなどを複数運営しています。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- フッター -->
+      <footer>
+        <div class="footer__contena inner">
+          <ul class="footer__content flex">
+            <li>
+              <p><a href="index.html">ホーム</a></p>
+            </li>
+            <li>
+              <p>
+                <a href="message.html"><p>メッセージ</p></a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="company.html"><p>会社概要</p></a>
+              </p>
+            </li>
+          </ul>
+          <p class="copy">&copy;START</p>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

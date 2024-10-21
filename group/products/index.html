@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Andy’s Antiquesは、20〜30代向けに厳選されたアンティーク家具を輸入・販売しています。高品質で長く使えるアイテムを通じて、日常にエレガンスと歴史を添えます。個人向けの販売に加え、企業向けの高級感溢れる家具や短期レンタルもご提供。時を超えた美しさを、ぜひご体験ください。">
+    <title>Andy’s Antiques | Products</title>
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+    media="screen and (max-width: 768px)"> <!-- drawer.css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- ファビコン -->
+    <link rel="icon" href="../images/favicon.png">
+
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="drawer drawer--right" id="top">
+
+    <!-- ヘッダー -->
+    <img class="logo--sp" src="../images/logo.png" alt="logo--sp">
+    <header role="banner">
+        <!-- ハンバーガーメニュー・ボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+
+        <nav class="drawer-nav inner" role="navigation">
+            <ul class="drawer-menu flex">
+                <li class="top"><a class="drawer-menu-item" href="../index.html">Top</a></li>
+                <li class="products"><a class="drawer-menu-item" href="../products/index.html">Products</a></li>
+                <li class="aboutus"><a class="drawer-menu-item" href="../aboutus/index.html">About Us</a> </li>
+                <li><a href="../index.html"><img class="header__logo" src="../images/logo.png" alt="Andy's Antiques"></a></li>
+                <li class="news"><a class="drawer-menu-item" href="../news/index.html">News</a> </li>
+                <li class="recruit"><a class="drawer-menu-item" href="../recruit/index.html">Recruit</a></li>
+                <li class="contact"><a class="drawer-menu-item" href="../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- メイン -->
+    <div class="products__mainvisual flex">
+        <h1>~Products~</h1>
+        <p>Antique, Vintage and Contemporary Furniture Collection</p>
+    </div>
+    <main>
+        <div class="inner">
+            <div id="wrapper">
+                <div class="flex search">
+                    <div id="buttons" class="inview">
+                        <button class="filter-button" value="all">all</button>
+                        <button class="filter-button" value="chair">chair</button>
+                        <button class="filter-button" value="table">table</button>
+                        <button class="filter-button" value="shelf">shelf</button>
+                        <button class="filter-button" value="lamp">lamp</button>
+                    </div>
+                    <form action="program.php" method="post">
+                        <input class="inview" type="search" name="search">
+                    </form>
+                </div>
+                <ul class="list flex inview">
+                    <li class="chair">
+                        <div class="itemContena"><img src="../images/chair01.jpg" alt="item1">
+                            <p class="itemText">Hans J. Wegner Bear Chair Ap19<br>
+                                HANS J. WEGNER ベアチェア AP19<br>
+                                QC008903<br>
+                                W925 mm D900 mm H970 mm / 400 mm<br>
+                                ¥3,650,000<br>
+                                （税込： ¥4,015,000 ）</p>
+                        </div>
+                    </li>
+                    <li class="chair">
+                        <div class="itemContena"><img src="../images/chair02.jpg" alt="item2">
+                            <p class="itemText">Kai Kristiansen Troja Armchair<br>
+                                KAI KRISTIANSEN TROJA アームチェア<br>
+                                QC008208<br>
+                                W650 mm D470 mm H720 mm / 460 mm<br>
+                                ¥300,000
+                                <br>
+                                （税込：¥330,000）
+                            </p>
+                        </div>
+                    </li>
+                    <li class="table">
+                        <div class="itemContena"><img src="../images/table01.jpg" alt="item3">
+                            <p class="itemText">Hall Table<br>
+                                ホールテーブル<br>
+                                QD001077<br>
+                                W915 mm D480 mm H760 mm<br>
+                                ¥175,000<br>
+                                （税込： ¥192,500 ）</p>
+                        </div>
+                    </li>
+                    <li class="lamp">
+                        <div class="itemContena"><img src="../images/lamp01.jpg" alt="item4">
+                            <p class="itemText">Mazzega Wall Lamp<br>
+                                MAZZEGA ウォールランプ<br>
+                                QD007078<br>
+                                W470 mm D120 mm H470 mm<br>
+                                ¥225,000<br>
+                                （税込： ¥247,500 ）</p>
+                        </div>
+                    </li>
+                    <li class="chair">
+                        <div class="itemContena"><img src="../images/chair03.jpg" alt="item5">
+                            <p class="itemText">Kurt Olsen Easy Chair Model.221<br>
+                                KURT OLSEN イージーチェア Model.221<br>
+                                QC008901<br>
+                                W850 mm D850 mm H890 mm / 400 mm<br>
+                                ¥620,000<br>
+                                （税込：¥682,000 ）</p>
+                        </div>
+                    </li>
+                    <li class="lamp">
+                        <div class="itemContena"><img src="../images/lamp02.jpg" alt="item6">
+                            <p class="itemText">Svend Aage Sorensen Floor Lamp<br>
+                                SVEND AAGE SORENSEN フロアランプ<br>
+                                QC008305<br>
+                                W225 mm D225 mm H1780 mm<br>
+                                ¥250,000<br>
+                                （税込： ¥275,000 ）</p>
+                        </div>
+                    </li>
+                    <li class="shelf">
+                        <div class="itemContena"><img src="../images/shelf01.jpg" alt="item7">
+                            <p class="itemText">Victorian Shelf<br>
+                                ヴィクトリアンシェルフ<br>
+                                QD001129<br>
+                                W440 mm D350 mm H835 mm<br>
+                                ¥195,000<br>
+                                （税込： ¥214,500 ）</p>
+                        </div>
+                    </li>
+                    <li class="table">
+                        <div class="itemContena"><img src="../images/table02.jpg" alt="item8">
+                            <p class="itemText">Henning Kjaernulf Drop Leaf Coffee Table<br>
+                                ドロップリーフコーヒーテーブル<br>
+                                QC008016<br>
+                                W395 mm / 755 mm D700 mm H520 mm<br>
+                                ¥150,000<br>
+                                （税込：¥165,000 ）</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer__contact">
+            <div class="inner flex">
+                <div class="footer__contact__left">
+                    <h2>Contact</h2>
+                    <p>お問い合わせ</p>
+                </div>
+
+                <div class="footer__contact__right">
+                    <ul>
+                        <li>
+                            <a href="../contact/index.html">
+                                <h3 class="footer__contact__right--products">About Products</h3>
+                                <p>商品などのお問い合わせ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../recruit/index.html">
+                                <h3 class="footer__contact__right--recruit">Recruit</h3>
+                                <p>採用、求人についてのお問い合わせ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- PC用のフッター -->
+    <div class="footer-pc">
+        <!-- 茶色div -->
+        <div class="footer--brown">
+  
+          <!-- 黒いdiv -->
+          <!-- 左半分 -->
+          <div class="footer--black inner flex">
+            <div class="footer--black--leftcontena">
+              <div class="footer--black--logo">
+                <figure><img src="../images/logo.png" alt="andy's antique"></figure>
+                <a href="#" target="_blank"><img class="instagram" src="../images/instagram.jpg" alt="instagram"></a>
+                <a href="#" target="_blank"><img class="facebook" src="../images/facebook.jpg" alt="facebook"></a>
+                <p class="footer--black--tell">Tel: 03-54XX-XXXX (10:00-18:00)</p>
+              </div>
+  
+              <div class="footer-link flex">
+                <a href="../recruit/index.html">
+                  <p class="footer--black--recruit">Recruit</p>
+                </a>
+                <a href="../contact/index.html">
+                  <p class="footer--black--contact">Contact</p>
+                </a>
+              </div>
+            </div>
+            <!-- 中央 -->
+            <div class="totop"><a href="#top">
+                <p class="totop--mark">></p>
+                <p class="totop--text">TOP</p>
+              </a></div>
+            <!-- 右半分-->
+            <div class="footer--black--rightcontena">
+              <ul class="flex">
+                <li><a href="../products/index.html">
+                    <p class="footer--black--rightcontena--link">Products</p>
+                  </a></li>
+                <li><a href="../aboutus/index.html">
+                    <p class="footer--black--rightcontena--link">About Us</p>
+                  </a></li>
+                <li><a href="../news/index.html">
+                    <p class="footer--black--rightcontena--link">News</p>
+                  </a></li>
+              </ul>
+              <p class="footer--black--rightcontena--address">1-1-1 Minami Aoyama, Minato-ku,<br>
+                Tokyo, 107-0062, JAPAN</p>
+  
+              <p class="copyright">Copyright &copy;Andy's Antiques Co.,Ltd. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- スマホ用のフッター -->
+      <div class="footer-sp">
+        <p><img class="logo-small" src="../images/logo.png" alt="andy's antique"></p>
+        <p class="footer--black--tell-sp">Tel: 03-54XX-XXXX (10:00-18:00)</p>
+        <a href="#" target="_blank"><img class="instagram-sp" src="../images/instagram.jpg" alt="instagram"></a>
+        <a href="#" target="_blank"><img class="facebook-sp" src="../images/facebook.jpg" alt="facebook"></a>
+     
+  
+        <div class="totop"><a href="#top">
+            <p class="totop--mark">></p>
+            <p class="totop--text">TOP</p>
+          </a></div>
+        <p class="copyright">Copyright &copy;Andy's Antiques Co.,Ltd. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/script_products.js"></script>
+</body>
+
+</html>

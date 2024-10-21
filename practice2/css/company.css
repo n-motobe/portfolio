@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* 下層ページヘッダー */
+header {
+  padding: 0;
+  height: 280px;
+}
+.header__top {
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+.header__visual {
+  width: 100%;
+}
+picture {
+  width: 100vw;
+}
+.header__visual {
+  width: 100%;
+  height: 190px;
+}
+.header__visual__pic {
+  width: 100%;
+  max-height: 190px;
+}
+/* 会社概要 */
+
+.company {
+  font-size: 15px;
+  line-height: 17.3px;
+  letter-spacing: 0.05em;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+dl {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.company dt {
+  float: left;
+  width: 15%;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.company dd {
+  border-bottom: 1px solid #ddd;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.company_news {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.company_news dt {
+  float: left;
+  width: 10%;
+
+  clear: both;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.company_news dd {
+  border-bottom: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*会社ニュース */
+.company_news {
+  font-size: 15px;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: auto;
+  }
+
+  header {
+    height: auto;
+  }
+  .header__top {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+  }
+  .company {
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 35px;
+  }
+  .company dl {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .company dt {
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .company dd {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  iframe {
+    width: 100vw;
+    max-width: 1110px;
+    height: 329px;
+    object-fit: cover;
+  }
+  .company_news {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .company_news dt {
+    font-size: 15px;
+    line-height: 27px;
+    float: none;
+    padding: 0;
+    padding-top: 15px;
+  }
+  .company_news dd {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+}

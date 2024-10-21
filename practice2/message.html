@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START | TOP</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/destyle.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/message.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="flex header__top">
+        <h1>
+          <a href="index.html"
+            ><img class="header__logo" src="images/logo.svg" alt="START"
+          /></a>
+        </h1>
+        <nav class="nav_pc">
+          <ul class="header__contents flex">
+            <li>
+              <p class="header__item header__item--pink">
+                <a href="index.html">ホーム</a>
+              </p>
+            </li>
+            <li>
+              <p class="header__item"><a href="message.html">メッセージ</a></p>
+            </li>
+            <li>
+              <p class="header__item"><a href="company.html">会社概要</a></p>
+            </li>
+          </ul>
+        </nav>
+        <!-- ハンバーガーボタン -->
+        <div class="btn"><span></span><span></span><span></span></div>
+        <nav class="nav_sp">
+          <ul class="nav__content--sp">
+            <li>
+              <p class="nav____content__item--sp header__item">
+                <a href="index.html">ホーム</a>
+              </p>
+            </li>
+            <li>
+              <p class="nav____content__item--sp">
+                <a href="message.html">メッセージ</a>
+              </p>
+            </li>
+            <li>
+              <p class="nav____content__item--sp">
+                <a href="company.html">会社概要</a>
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ヘッダービジュアル -->
+
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="images/sp_header.jpg"
+          alt="header_visual"
+        />
+        <img
+          class="header__visual__pic"
+          src="images/pc_sub-header.jpg"
+          alt="header_visual"
+        />
+      </picture>
+    </header>
+
+    <main class="inner">
+      <section class="section--ceo">
+        <h2 class="section__title--ceo">
+          「仕事」をきっかけに<br />人生の新しいスタートを！
+        </h2>
+        <p class="section__title__under--ceo">
+          大事なお仕事探しを応援させてください
+        </p>
+        <div class="section__container--ceo">
+          <figure>
+            <img class="ceo-photo" src="images/ceo.png" alt="ceo" />
+          </figure>
+
+          <p class="section__contatiner__text--ceo">
+            はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。<br />
+            私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。<br />
+            株式会社STARTは、みなさんが仕事をきっかけに理想の人生を実現する手助けをしています。幸せにつながるお仕事紹介サービス<a
+              href="index.html"
+              >『スタート』</a
+            >や、共通の目標を目指す仲間が見つかる人材紹介SNS<a href="#"
+              >『ゴール』</a
+            >を運営しています。また、Webデザインの基礎スキルを身につけられるスクール<a
+              href="#"
+              >『Webの学校』</a
+            >も随時開講しています。
+          </p>
+        </div>
+
+        <picture>
+          <img class="office_photo" src="images/office.jpg" alt="office" />
+        </picture>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__contena inner">
+        <ul class="footer__content flex">
+          <li>
+            <p><a href="index.html">ホーム</a></p>
+          </li>
+          <li>
+            <p>
+              <a href="message.html"><p>メッセージ</p></a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="company.html"><p>会社概要</p></a>
+            </p>
+          </li>
+        </ul>
+        <p class="copy">&copy;START</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

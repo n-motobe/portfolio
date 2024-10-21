@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Andy’s Antiquesは、20〜30代向けに厳選されたアンティーク家具を輸入・販売しています。高品質で長く使えるアイテムを通じて、日常にエレガンスと歴史を添えます。個人向けの販売に加え、企業向けの高級感溢れる家具や短期レンタルもご提供。時を超えた美しさを、ぜひご体験ください。">
+    <title>Andy’s Antiques | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+        media="screen and (max-width: 768px)"> <!-- drawer.css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- ファビコン -->
+    <link rel="icon" href="../images/favicon.png">
+    <!-- JavaScript, jQuery -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <!-- レスポンシブ -->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=ne">
+</head>
+
+<body class="drawer drawer--right" id="top">
+
+    <!-- ヘッダー -->
+    <header role="banner">
+        <!-- ハンバーガーメニュー・ボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+
+        <nav class="drawer-nav inner" role="navigation">
+            <ul class="drawer-menu flex">
+                <li class="top"><a class="drawer-menu-item" href="../index.html">Top</a></li>
+                <li class="products"><a class="drawer-menu-item" href="../products/index.html">Products</a></li>
+                <li class="aboutus"><a class="drawer-menu-item" href="../aboutus/index.html">About Us</a> </li>
+                <li><img class="header__logo" src="../images/logo.png" alt="Andy's Antiques"></li>
+                <li class="news"><a class="drawer-menu-item" href="../news/index.html">News</a> </li>
+                <li class="recruit"><a class="drawer-menu-item" href="../recruit/index.html">Recruit</a></li>
+                <li class="contact"><a class="drawer-menu-item" href="../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル部 -->
+    <div class="contact__mainvisual flex">
+        <h1>~Contact~</h1>
+        <p>お問い合わせ</p>
+    </div>
+    <main>
+        <!-- 白いdiv -->
+        <div class="main--white inner">
+            <section class="inner ex">
+                <h2>お問い合わせフォーム</h2>
+                <h3>Contact form</h3>
+                <h4>各種お問い合わせは下のフォームにご入力ください。<span>*必須項目 Required item</span></h4>
+                <h4>お急ぎの方は、03-54XX-XXXXまでお電話をお願いいたします。(受付時間 10:00-18:00)</h4>
+                <p>Please fill out the form below for any inquiries.</p>
+                <p>Please call 03-54XX-XXXX between 10:00 a.m. to 6:00 p.m. if you are in a hurry.</p>
+                <!-- ここに下線を引く -->
+            </section>
+            <section class="inner form">
+                <form action="program.php" method="post">
+                    <dl>
+                        <div class="formItem">
+                            <dt id="fIname"><label for="userName">お名前*</label></dt>
+                            <dd><input type="text" placeholder="Name" name="userName" id="userName"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIkana"><label for="userKana">フリガナ</label></dt>
+                            <dd><input type="text" placeholder="Ruby" name="userKana" id="userKana"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIcName"><label for="cName">法人名</label></dt>
+                            <dd><input type="text" placeholder="Company" name="cName" id="cName"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIpc"><label for="postCode">郵便番号*</label></dt>
+                            <dd><input type="text" placeholder="Post Code" name="postCode" id="postCode"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIad"><label for="address">ご住所</label></dt>
+                            <dd><input type="text" placeholder="Address" name="address" id="address"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIbn"><label for="bName">建物名</label></dt>
+                            <dd><input type="text" placeholder="Bldg. Name" name="bName" id="bName"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIpn"><label for="pNumber">電話番号*</label></dt>
+                            <dd><input type="text" placeholder="Phone Number" name="pNumber" id="pNumber"></dd>
+                        </div>
+                        <div class="formItem">
+                            <dt id="fIma"><label for="mAddress">Eメール*</label></dt>
+                            <dd><input type="text" placeholder="E-mail" name="mAddress" id="mAddress"></dd>
+                        </div>
+                        <div class="formItem content">
+                            <dt> <label for="messageType">お問い合わせ内容(お選びください)*
+                                </label></dt>
+                            <dd>
+                                <select name="messageType" id="messageType">
+                                    <option value="選択してください">Content of inquiry(Please select)</option>
+                                    <option value="選択肢1">商品などのお問い合わせ</option>
+                                    <option value="選択肢2">採用、求人についてのお問い合わせ</option>
+                                    <option value="選択肢3">その他のお問い合わせ</option>
+                                </select>
+                            </dd>
+                        </div>
+                        <div class="formItem">
+                            <dt><label for="message">コメント*</label></dt>
+                            <dd><textarea name="message" placeholder="Comment" id="message"></textarea></dd>
+                        </div>
+                    </dl>
+                    <div class="btn"><input type="submit" class="btn box" value="送信する/SEND"></div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer__contact">
+            <div class="inner flex">
+                <div class="footer__contact__left">
+                    <h2>Contact</h2>
+                    <p>お問い合わせ</p>
+                </div>
+
+                <div class="footer__contact__right">
+                    <ul>
+                        <li>
+                            <a href="../contact/index.html">
+                                <h3 class="footer__contact__right--products">About Products</h3>
+                                <p>商品などのお問い合わせ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../recruit/index.html">
+                                <h3 class="footer__contact__right--recruit">Recruit</h3>
+                                <p>採用、求人についてのお問い合わせ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PC用のフッター -->
+        <div class="footer-pc">
+            <!-- 茶色div -->
+            <div class="footer--brown">
+
+                <!-- 黒いdiv -->
+                <!-- 左半分 -->
+                <div class="footer--black inner flex">
+                    <div class="footer--black--leftcontena">
+                        <div class="footer--black--logo">
+                            <figure><img src="../images/logo.png" alt="andy's antique"></figure>
+                            <a href="#" target="_blank"><img class="instagram" src="../images/instagram.jpg"
+                                    alt="instagram"></a>
+                            <a href="#" target="_blank"><img class="facebook" src="../images/facebook.jpg"
+                                    alt="facebook"></a>
+                            <p class="footer--black--tell">Tel: 03-54XX-XXXX (10:00-18:00)</p>
+                        </div>
+
+                        <div class="footer-link flex">
+                            <a href="../recruit/index.html">
+                                <p class="footer--black--recruit">Recruit</p>
+                            </a>
+                            <a href="../contact/index.html">
+                                <p class="footer--black--contact">Contact</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 中央 -->
+                    <div class="totop"><a href="#top">
+                            <p class="totop--mark">></p>
+                            <p class="totop--text">TOP</p>
+                        </a></div>
+                    <!-- 右半分-->
+                    <div class="footer--black--rightcontena">
+                        <ul class="flex">
+                            <li><a href="../products/index.html">
+                                    <p class="footer--black--rightcontena--link">Products</p>
+                                </a></li>
+                            <li><a href="../aboutus/index.html">
+                                    <p class="footer--black--rightcontena--link">About Us</p>
+                                </a></li>
+                            <li><a href="../news/index.html">
+                                    <p class="footer--black--rightcontena--link">News</p>
+                                </a></li>
+                        </ul>
+                        <p class="footer--black--rightcontena--address">1-1-1 Minami Aoyama, Minato-ku,<br>
+                            Tokyo, 107-0062, JAPAN</p>
+
+                        <p class="copyright">Copyright &copy;Andy's Antiques Co.,Ltd. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- スマホ用のフッター -->
+        <div class="footer-sp">
+            <p><img class="logo-small" src="../images/logo.png" alt="andy's antique"></p>
+            <p class="footer--black--tell-sp">Tel: 03-54XX-XXXX (10:00-18:00)</p>
+            <a href="#" target="_blank"><img class="instagram-sp" src="../images/instagram.jpg" alt="instagram"></a>
+            <a href="#" target="_blank"><img class="facebook-sp" src="../images/facebook.jpg" alt="facebook"></a>
+
+            <div class="totop"><a href="#top">
+                    <p class="totop--mark">></p>
+                    <p class="totop--text">TOP</p>
+                </a></div>
+            <p class="copyright">Copyright &copy;Andy's Antiques Co.,Ltd. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+
+</html>

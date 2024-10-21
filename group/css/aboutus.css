@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+html {
+    display: none;
+}
+
+/* メインビジュアル */
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/aboutus_visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutusMainvisual {
+    width: 100%;
+    height: 57vw/*550px*/;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutusMainvisual h1 {
+    font-family: Lora, serif;
+    font-weight: normal;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+/* メイン部分 */
+main {
+    background-color: #210E03;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main .section {
+    background-color: #000;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+main .section h2 {
+    font-family: Lora, "Noto Serif Japanese", serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+main .section h3 {
+    font-family: Lora, "Noto Serif Japanese", serif;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+main .section p {
+    padding-bottom: 0.8em;
+}
+
+/* 左側の背景に画像を表示 */
+main .content {
+    gap: 20px;
+    align-items: start;
+}
+
+main .background-image {
+    /* コンテナの幅の半分 */
+    width: 50%;
+    height: 550px;
+    background-image: url(../images/photoAboutus.jpg);
+    /* 画像のURLを指定 */
+    background-size: cover;
+    /* 画像を要素のサイズに合わせて拡大・縮小 */
+    background-position: center;
+    /* 画像が中央に配置される */
+    background-repeat: no-repeat;
+    /* 画像の繰り返しを防止 */
+}
+
+main .content_description {
+    width: 50%;
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+}
+
+/* 会社情報 */
+main .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+}
+
+/* 表 */
+main .grid table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+main .grid th,
+main .grid td {
+    border: 1px solid #AAA;
+
+}
+
+main .grid th {
+    width: 27%;
+    font-weight: bold;
+    text-align: center;
+}
+
+main .grid td {
+    color: #333;
+    background-color: #F9F6EC;
+    text-align: left;
+    padding-left: 15px;
+}
+
+iframe {
+filter: grayscale(1);
+}
+
+/* 768px以下の時（レスポンシブ） */
+@media screen and (max-width: 768px) {
+
+    /* メインビジュアル */
+    body {
+        width: auto;
+        background-image: url(../images/logo.png), url(../images/aboutus_visual.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top center, top center;
+        background-size: auto, contain;
+        background-attachment: scroll, fixed;
+    }
+
+    .aboutusMainvisual {
+        width: auto;
+        height: auto;
+        padding-bottom: 20%;
+    }
+
+    .aboutusMainvisual h1 {
+        font-size: 45px;
+        margin-top: 33.333%;
+        margin-bottom: 30px;
+    }
+
+    /* メイン部分 */
+    main {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    main .section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    main .section h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+
+    main .section h3 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    main .content {
+        display: block;
+    }
+
+    main .background-image {
+        background-size: contain;
+        /* 画像を要素のサイズに合わせて拡大・縮小 */
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: static;
+        width: auto;
+        /* 画像の幅を設定 */
+        margin-left: 0;
+        /* 画像が画面の左に出るように配置 */
+        height: auto;
+        padding-top: 75%;
+    }
+
+    main .content_description {
+        width: auto;
+        /* テキストが画像の幅分だけのスペースを確保 */
+    }
+
+    /* 会社情報 */
+    main .grid {
+        display: block;
+        padding: 0;
+    }
+
+    /* 表 */
+    main .grid table {
+        margin-bottom: 25px;
+    }
+
+    main .grid th,
+    main .grid td {
+        border: 1px solid #AAA;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+}
+

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- ヘッダー -->
+    <header class="header flex">
+      <div class="header_logo">
+        <svg class="sp_only" xmlns="http://www.w3.org/2000/svg" width="96.697" height="12.356" viewBox="0 0 96.697 12.356">
+          <g id="グループ_1" data-name="グループ 1" transform="translate(-34.435 -35.05)">
+            <path id="パス_13" data-name="パス 13"
+              d="M-41.472-16.8a3.73,3.73,0,0,1,1.459,1.093,2.471,2.471,0,0,1,.524,1.559A2.878,2.878,0,0,1-40.674-11.6a5.1,5.1,0,0,1-2.957.814H-47.58V-22.2H-44.1a5.2,5.2,0,0,1,2.965.737,2.422,2.422,0,0,1,1.08,2.132,2.946,2.946,0,0,1-.371,1.5A2.77,2.77,0,0,1-41.472-16.8Zm-3.771-.729h1.418a1.3,1.3,0,0,0,1-.38,1.323,1.323,0,0,0,.355-.938,1.029,1.029,0,0,0-.4-.876,1.816,1.816,0,0,0-1.112-.3h-1.257Zm1.5,4.653a2.475,2.475,0,0,0,1.33-.318,1.051,1.051,0,0,0,.508-.954q0-1.21-2-1.21h-1.338v2.481Zm8.123-3.6a5.518,5.518,0,0,1,.814-2.9A6.036,6.036,0,0,1-32.6-21.521a5.975,5.975,0,0,1,3.022-.8,5.975,5.975,0,0,1,3.022.8,6.165,6.165,0,0,1,2.224,2.148,5.438,5.438,0,0,1,.83,2.9,5.413,5.413,0,0,1-.83,2.916,6.083,6.083,0,0,1-2.224,2.117,6.067,6.067,0,0,1-3.022.783,6.054,6.054,0,0,1-3.03-.783,5.973,5.973,0,0,1-2.2-2.117A5.493,5.493,0,0,1-35.622-16.473Zm2.417,0a3.551,3.551,0,0,0,.492,1.83,3.628,3.628,0,0,0,1.338,1.326,3.687,3.687,0,0,0,1.878.489,3.5,3.5,0,0,0,1.821-.489,3.517,3.517,0,0,0,1.289-1.318,3.68,3.68,0,0,0,.467-1.838,3.655,3.655,0,0,0-.483-1.861,3.6,3.6,0,0,0-1.313-1.326,3.57,3.57,0,0,0-1.845-.489,3.57,3.57,0,0,0-1.845.489,3.6,3.6,0,0,0-1.313,1.326A3.655,3.655,0,0,0-33.2-16.473ZM-18.909-22.2h3.546a7.413,7.413,0,0,1,3.739.845A5.2,5.2,0,0,1-9.49-19.164a6.36,6.36,0,0,1,.669,2.877,5.253,5.253,0,0,1-.806,2.9,5.34,5.34,0,0,1-2.168,1.931,6.641,6.641,0,0,1-2.99.675h-4.126Zm3.723,9.243a4.324,4.324,0,0,0,2.885-.9,3.2,3.2,0,0,0,1.064-2.59,3.609,3.609,0,0,0-.588-2.171A3.138,3.138,0,0,0-13.2-19.73a4.006,4.006,0,0,0-1.475-.31h-1.9v7.088ZM4.83-22.2.381-14.333v3.552H-1.955v-3.552L-6.323-22.2h2.885l2.724,5.273L1.945-22.2Z"
+              transform="translate(126.302 57.708)" fill="#111" />
+            <path id="パス_14" data-name="パス 14"
+              d="M-27.475-22.5v2.176h-5.753v2.44h5.093v2.176h-5.093v2.471h5.979v2.176h-8.316V-22.5Zm15.584,0v11.9h-.064l-8.3-7.227.048,6.761h-2.369V-22.95h.1l8.284,7.336-.048-6.885ZM3.049-12.211a3.177,3.177,0,0,1-.975.583,8.934,8.934,0,0,1-1.547.5,6.932,6.932,0,0,1-1.539.194,7.366,7.366,0,0,1-3.312-.707,5.264,5.264,0,0,1-2.2-1.958A5.311,5.311,0,0,1-7.3-16.454a6.568,6.568,0,0,1,.822-3.4,5.253,5.253,0,0,1,2.208-2.083,6.761,6.761,0,0,1,3.062-.692,8.506,8.506,0,0,1,2.031.233,7.636,7.636,0,0,1,1.676.606l-.757,2.1a5.979,5.979,0,0,0-1.281-.458A5.645,5.645,0,0,0-.9-20.355a4.244,4.244,0,0,0-2.957.933A3.556,3.556,0,0,0-4.88-16.656a3.356,3.356,0,0,0,.5,1.842,3.241,3.241,0,0,0,1.394,1.2,4.746,4.746,0,0,0,2.039.42,3.468,3.468,0,0,0,1.628-.3v-1.383H-1.367v-2.176H3.049Z"
+              transform="translate(70 58)" fill="#eb51c2" />
+          </g>
+        </svg>
+        <svg class="pc_only" xmlns="http://www.w3.org/2000/svg" width="180" height="23" viewBox="0 0 96.697 12.356">
+          <g id="グループ_1" data-name="グループ 1" transform="translate(-34.435 -35.05)">
+            <path id="パス_13" data-name="パス 13"
+              d="M-41.472-16.8a3.73,3.73,0,0,1,1.459,1.093,2.471,2.471,0,0,1,.524,1.559A2.878,2.878,0,0,1-40.674-11.6a5.1,5.1,0,0,1-2.957.814H-47.58V-22.2H-44.1a5.2,5.2,0,0,1,2.965.737,2.422,2.422,0,0,1,1.08,2.132,2.946,2.946,0,0,1-.371,1.5A2.77,2.77,0,0,1-41.472-16.8Zm-3.771-.729h1.418a1.3,1.3,0,0,0,1-.38,1.323,1.323,0,0,0,.355-.938,1.029,1.029,0,0,0-.4-.876,1.816,1.816,0,0,0-1.112-.3h-1.257Zm1.5,4.653a2.475,2.475,0,0,0,1.33-.318,1.051,1.051,0,0,0,.508-.954q0-1.21-2-1.21h-1.338v2.481Zm8.123-3.6a5.518,5.518,0,0,1,.814-2.9A6.036,6.036,0,0,1-32.6-21.521a5.975,5.975,0,0,1,3.022-.8,5.975,5.975,0,0,1,3.022.8,6.165,6.165,0,0,1,2.224,2.148,5.438,5.438,0,0,1,.83,2.9,5.413,5.413,0,0,1-.83,2.916,6.083,6.083,0,0,1-2.224,2.117,6.067,6.067,0,0,1-3.022.783,6.054,6.054,0,0,1-3.03-.783,5.973,5.973,0,0,1-2.2-2.117A5.493,5.493,0,0,1-35.622-16.473Zm2.417,0a3.551,3.551,0,0,0,.492,1.83,3.628,3.628,0,0,0,1.338,1.326,3.687,3.687,0,0,0,1.878.489,3.5,3.5,0,0,0,1.821-.489,3.517,3.517,0,0,0,1.289-1.318,3.68,3.68,0,0,0,.467-1.838,3.655,3.655,0,0,0-.483-1.861,3.6,3.6,0,0,0-1.313-1.326,3.57,3.57,0,0,0-1.845-.489,3.57,3.57,0,0,0-1.845.489,3.6,3.6,0,0,0-1.313,1.326A3.655,3.655,0,0,0-33.2-16.473ZM-18.909-22.2h3.546a7.413,7.413,0,0,1,3.739.845A5.2,5.2,0,0,1-9.49-19.164a6.36,6.36,0,0,1,.669,2.877,5.253,5.253,0,0,1-.806,2.9,5.34,5.34,0,0,1-2.168,1.931,6.641,6.641,0,0,1-2.99.675h-4.126Zm3.723,9.243a4.324,4.324,0,0,0,2.885-.9,3.2,3.2,0,0,0,1.064-2.59,3.609,3.609,0,0,0-.588-2.171A3.138,3.138,0,0,0-13.2-19.73a4.006,4.006,0,0,0-1.475-.31h-1.9v7.088ZM4.83-22.2.381-14.333v3.552H-1.955v-3.552L-6.323-22.2h2.885l2.724,5.273L1.945-22.2Z"
+              transform="translate(126.302 57.708)" fill="#111" />
+            <path id="パス_14" data-name="パス 14"
+              d="M-27.475-22.5v2.176h-5.753v2.44h5.093v2.176h-5.093v2.471h5.979v2.176h-8.316V-22.5Zm15.584,0v11.9h-.064l-8.3-7.227.048,6.761h-2.369V-22.95h.1l8.284,7.336-.048-6.885ZM3.049-12.211a3.177,3.177,0,0,1-.975.583,8.934,8.934,0,0,1-1.547.5,6.932,6.932,0,0,1-1.539.194,7.366,7.366,0,0,1-3.312-.707,5.264,5.264,0,0,1-2.2-1.958A5.311,5.311,0,0,1-7.3-16.454a6.568,6.568,0,0,1,.822-3.4,5.253,5.253,0,0,1,2.208-2.083,6.761,6.761,0,0,1,3.062-.692,8.506,8.506,0,0,1,2.031.233,7.636,7.636,0,0,1,1.676.606l-.757,2.1a5.979,5.979,0,0,0-1.281-.458A5.645,5.645,0,0,0-.9-20.355a4.244,4.244,0,0,0-2.957.933A3.556,3.556,0,0,0-4.88-16.656a3.356,3.356,0,0,0,.5,1.842,3.241,3.241,0,0,0,1.394,1.2,4.746,4.746,0,0,0,2.039.42,3.468,3.468,0,0,0,1.628-.3v-1.383H-1.367v-2.176H3.049Z"
+              transform="translate(70 58)" fill="#eb51c2" />
+          </g>
+        </svg>
+      </div>
+      <div class="counseling_btn_small flex">
+        <p class="counseling_btn_small_text">無料カウンセリングを受ける</p>
+      </div>
+    </header>
+    <!-- メインビジュアル・タイトル -->
+    <main>
+      <div class="main_visual">
+        <div class="main_visual_img"></div>
+
+        <div id="splash">
+          <div id="splash-logo"></div>
+        </div>
+        <div class="splashbg"></div>
+        <div id="container">
+       </div>
+
+        <div>
+          <h2 class="catch_title">
+
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                <span class="mv__text-bg-color">Body Make</span>
+              </span>
+            </span>
+            <br />
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                <span class="mv__text-bg-color"
+                  ><span class="mv__text-and">&</span>English</span
+                >
+              </span>
+            
+            </span>
+          </h2>
+          <p class="catch_text">英会話&パーソナルトレーニングジム</p>
+        </div>
+        <div class="counseling_btn_large flex">
+          <p class="counseling_btn_large_text">無料カウンセリングを受ける</p>
+        </div>
+      </div>
+      <!-- イントロ -->
+      <section class="intro">
+        <div class="youcan">
+          <h1 class="youcan_p">YOU CAN<br class="sp_only" />DO IT!</h1>
+        </div>
+        <div class="youcan_p_under">
+          <p>英語とトレーニングの<span>蜜月関係</span></p>
+          <p class="intro_text">
+            Hey, guys!
+            英語を話している時ってなんだかテンションが上りませんか？<br />
+            バイブス高めでトレーニングをすれば、あなたのベストなパフォーマンスが出せます！<br />
+            英語と運動に自信がなくたってOK！<br />
+            優しくて盛り上げな上手な外国人トレーナーがしっかりサポートします。<br />
+            さぁ、ENGBODYで英語でパーソナルトレーニングを受けましょう。
+          </p>
+        </div>
+      </section>
+      <!-- 特徴 -->
+      <section class="about">
+        <div class="about_container training inner_wide">
+          <img class="about_container_photo" src="images/about-training.jpg" alt="トレーニングする女性" />
+          <div class="about_container_text about_container_text_training fade" >
+            <h4 class="about_container_title">Training</h4>
+
+            <h3 class="about_container_catch">
+              セッションは全て英語。<br />LAさながらの環境
+            </h3>
+            <p>
+              ネイティブスピーカーによる50分のパーソナルトレーニングはすべて英語です！アップテンポの洋楽が流れる空間でテンション高めのトレーナーが英語であなたのトレーニングを盛り上げてくれます。ダイエットでよく使う英語をまとめたオリジナルテキストもあるのでスピーキング学習もバッチリです！<br />
+              英語に苦手意識がある方は日本人トレーナーも選べますのでご安心してください。
+            </p>
+          </div>
+        </div>
+        <div class="about_container food inner_wide">
+          <img class="about_container_photo about_container_photo_food" src="images/about-food.jpg" alt="食べ物の写真" />
+          <div class="about_container_text about_container_text_food fade">
+            <h4 class="about_container_title green">Food</h4>
+
+            <h3 class="about_container_catch">
+              低糖質レストランを完備！<br />
+              美味しく食べてダイエット
+            </h3>
+            <p>
+              食事制限って大変ですよね......。でも大丈夫！ENGBODY館内には低糖質レストラン『LCR』を完備しています。Low
+              carb（低糖質）なのにとっても美味しい味に驚くはずです！メニューも豊富で飽きさせません。美味しく食べてしっかり痩せる！しかも英語力もアップ！それがENGBODYなのです。
+            </p>
+          </div>
+        </div>
+        <div class="counseling_btn_large2 flex">
+          <p class="counseling_btn_large_text">無料カウンセリングを受ける</p>
+        </div>
+      </section>
+      <!-- トレーナー -->
+      <svg class="wave_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
+        <path id="wave"
+          d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z"
+          transform="translate(0 -224)" fill="#eb51c2" />
+      </svg>
+
+      <section class="trainers">
+        <div class="inner">
+          <h3 class="heading-primary heading-primary--color-reverse">
+            Our Trainer<span class="heading-primary__subtitle">トレーナー</span>
+          </h3>
+          <!-- タブ -->
+          <ul class="tab-list flex">
+            <li><a href="#trainer" class="tab current">トレーナー</a></li>
+            <li><a href="#staff" class="tab">スタッフ</a></li>
+          </ul>
+          <div id="contents">
+
+            <div id="trainer" class="fade">
+              <ul>
+                <li>
+                  <img src="images/trainer01.jpg" alt="トレーナー１" />
+                  <p class="profile">
+                    こんにちは！英語で楽しくトレーニングしましょう。日本語が話せますのでご安心ください。
+                  </p>
+                </li>
+                <li>
+                  <img src="images/trainer02.jpg" alt="トレーナー２" />
+                  <p class="profile">
+                    Hello!
+                    筋肉をつけすぎずしなやかな体を作ることが得意です！美しさを磨いていきましょう。
+                  </p>
+                </li>
+
+                <li>
+                  <img src="images/trainer03.jpg" alt="トレーナー３" />
+                  <p class="profile">
+                    Hi,
+                    負荷や強度の高いトレーニングがしたいならおまかせてください！どんなご要望もできるかぎり叶えますよ！
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div id="staff">
+              <ul>
+                <li>
+                  <img src="images/staff01.jpg" alt="スタッフ１" />
+                  <p class="profile">
+                    ENBODYは明るくてとっても楽しいジムです！みなさんのセッションが楽しくなるようしっかりサポートいたします。
+                  </p>
+                  </li0>
+                <li> <img src="images/staff02.jpg" alt="スタッフ２" />
+                  <p class="profile">
+                    Hi, please let me know anytime if you have any questions. We
+                    will fully support you!
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      </section>
+      <svg class="wave_bottom" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 375 25">
+        <path id="wave"
+          d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z"
+          transform="translate(375 249) rotate(180)" fill="#eb51c2" />
+      </svg>
+
+      <!-- SWIPER -->
+       <section class="studio">
+      <div class="inner">
+        <h3 class="heading-primary">
+         Studio<span class="heading-primary__subtitle">スタジオ</span>
+        </h3>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/studio01.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/studio02.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/studio03.jpg" alt="" />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+      </div>
+    </section>
+
+      <!-- Price -->
+
+      <svg class="wave_top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
+        <path id="wave"
+          d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z"
+          transform="translate(0 -224)" fill="#eb51c2" />
+      </svg>
+
+      <div class="section__inner">
+        <div class="container">
+          <div class="section__heading">
+            <h2 class="heading-primary heading-primary--color-reverse">
+              Price<span class="heading-primary__subtitle">料金</span>
+            </h2>
+          </div>
+          <div class="price__body">
+            <div class="price-list">
+              <!-- 週1コース -->
+              <div class="price-box">
+                <h3 class="price-box__title">週１コース</h3>
+                <div class="price-box__price">
+                  <p class="price-box__price-price"><span>¥</span>20,000</p>
+                  <p class="price-box__price-note">（入会金 ¥10000）</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レンタル</h4>
+                  <p class="price-box__item-text">
+                    タオル、ウェア、プロテイン無料
+                  </p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レストラン</h4>
+                  <p class="price-box__item-text">使用不可</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">食事指導</h4>
+                  <p class="price-box__item-text">なし</p>
+                </div>
+              </div>
+              <!-- 週2コース -->
+              <div class="price-box">
+                <div class="price-box__label">オススメ！</div>
+                <h3 class="price-box__title">週２コース</h3>
+                <div class="price-box__price">
+                  <p class="price-box__price-price"><span>¥</span>40,000</p>
+                  <p class="price-box__price-note">（入会金 ¥10,000）</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レンタル</h4>
+                  <p class="price-box__item-tex">
+                    タオル、ウェア、プロテイン無料
+                  </p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レストラン</h4>
+                  <p class="price-box__item-text">使用不可</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">食事指導</h4>
+                  <p class="price-box__item-text">無し</p>
+                </div>
+              </div>
+
+              <!-- 無制限 -->
+              <div class="price-box">
+                <h3 class="price-box__title">無制限</h3>
+                <div class="price-box__price">
+                  <p class="price-box__price-price"><span>¥</span>70,000</p>
+                  <p class="price-box__price-note">（入会金 ¥10,000）</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レンタル</h4>
+                  <p class="price-box__item-text">
+                    タオル、ウェア、プロテイン無料
+                  </p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">レストラン</h4>
+                  <p class="price-box__item-text">使用可</p>
+                </div>
+                <div class="price-box__item">
+                  <h4 class="price-box__item-title">食事指導</h4>
+                  <p class="price-box__item-text">有り</p>
+                </div>
+              </div>
+              <!-- スクロール -->
+
+              <div class="price-list__scroll">
+                <span class="price-list__scroll-icon material-icons-round">east</span>スクロール
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="wave_bottom" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 375 25">
+        <path id="wave"
+          d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z"
+          transform="translate(375 249) rotate(180)" fill="#eb51c2" />
+      </svg>
+
+      <!--  FAQ   -->
+      <section class="faq">
+        <div class="container">
+          <div class="section__heading">
+            <h2 class="heading-primary">
+              FAQ<span class="heading-primary__subtitle">よくあるご質問</span>
+            </h2>
+          </div>
+          <!-- アコーディオン全体 -->
+          <div class="faq__body">
+            <dl class="accordion">
+              <!-- QA１ -->
+              <div class="accordion__item">
+                <!-- 質問１ -->
+                <dt class="accordion__question accordion__question--first">
+                  <div class="accordion__question-inner">
+                    <span class="accordion__label">Q</span>
+                    <p class="accordion__text">見学や体験は可能ですか？</p>
+                  </div>
+                </dt>
+                <!-- 回答１ -->
+                <dd class="accordion__answer">
+                  <div class="accordion__answer-inner">
+                    <span class="accordion__label">A</span>
+                    <p class="accordion__text">
+                      無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。
+                    </p>
+                  </div>
+                </dd>
+              </div>
+
+              <!--QA2-->
+              <div class="accordion__item">
+                <!-- 質問２ -->
+                <dt class="accordion__question">
+                  <div class="accordion__question-inner">
+                    <span class="accordion__label">Q</span>
+                    <p class="accordion__text">
+                      用意するものは何がありますか？
+                    </p>
+                  </div>
+                </dt>
+                <!-- 回答２ -->
+                <dd class="accordion__answer">
+                  <div class="accordion__answer-inner">
+                    <span class="accordion__label">A</span>
+                    <p class="accordion__text">
+                      シューズをご持参ください。ウェアとタオルは無料でレンタルが可能です。
+                    </p>
+                  </div>
+                </dd>
+              </div>
+              <!-- QA３ -->
+              <div class="accordion__item">
+                <!-- 質問３ -->
+                <dt class="accordion__question">
+                  <div class="accordion__question-inner">
+                    <span class="accordion__label">Q</span>
+                    <p class="accordion__text">
+                      シャワールームはありますか？
+                    </p>
+                  </div>
+                </dt>
+                <!-- 回答３ -->
+                <dd class="accordion__answer">
+                  <div class="accordion__answer-inner">
+                    <span class="accordion__label">A</span>
+                    <p class="accordion__text">
+                      5つのシャワールームがございます。ボディソープ・シャンプー・リンスなどのアメニティやドライヤーもご用意しております。
+                    </p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <!-- accordionのdl -->
+          </div>
+          <!-- accordion -->
+        </div>
+        <!-- container -->
+      </section>
+
+      <!-- フッター上の写真エリア -->
+      <div class="cta">
+        <picture>
+          <source media="(max-width:768px)" srcset="images/sp_cta.jpg" />
+          <img src="images/pc_cta.jpg" alt="トレーナーの写真" />
+        </picture>
+      </div>
+      <div class="cta__body">
+        <div class="cta__title">Come join us!! 😊</div>
+        <div class="counseling_btn_large3 flex">
+          <p class="counseling_btn_large3_text">
+            <a href="#">無料カウンセリングを受ける</a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__logo">
+          <a href="."><img class="footer__logo-img" src="images/logo_white.png" alt="ENGBODY" /></a>
+        </div>
+      </footer>
+      <div class="page-top">
+        <a class="page-top__link"
+          ><span class="page-top__icon material-icons-round"
+            >keyboard_arrow_up</span
+          >
+        </a>
+      </div>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

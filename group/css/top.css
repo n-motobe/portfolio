@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+html{
+  display: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.logo--sp{
+  display: none;
+}
+.top__mainvisual {
+  width: 100%;
+  height:57vw;
+  font-size: 0;
+ color: transparent;
+  line-height: 0;
+}
+
+.main-section {
+  background-color: #210e03;
+  text-align: center;
+  position: relative;
+}
+.main-section .inner .flex {
+  text-align: start;
+}
+
+/* products */
+.products-section {
+  padding-top: 60px;
+}
+.products-section .flex p{
+margin-bottom: 20px;
+}
+.products-contena--black {
+  background-color: #000;
+  padding: 10px 0 20px;
+  margin-bottom: 20px;
+}
+
+.products-section h1 {
+  font-size: 60px;
+  line-height: 1em;
+  font-family: Lora;
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.transparent{
+  opacity: 90%;
+}
+.products-contena__ul {
+  margin-bottom: 10px;
+}
+
+.viewall-btn {
+  text-decoration: underline;
+  font-family: Lora;
+  font-size: 20px;
+}
+/* News */
+
+.news-section .inner {
+  background-color: #000;
+  padding: 60px 0 10px;
+}
+.news-section .flex {
+  justify-content: flex-start;
+}
+.news-section h1 {
+  font-size: 60px;
+  line-height: 1em;
+  font-family: Lora;
+  font-weight: bold;
+  font-style: italic;
+  writing-mode: vertical-rl;
+  margin: 0px 50px;
+  text-align: center;
+}
+.news-photo {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding-right: 10px;
+  clear: both;
+  margin-bottom: 50px;
+}
+.dt-dd-box {
+  height: 60px;
+  margin-bottom: 50px;
+}
+.news-section dt,
+.news-section dd {
+  width: 363px;
+}
+
+.news-section dt {
+  font-size: 12px;
+  line-height: 1em;
+  color: #999999;
+}
+.news-section .dd-large {
+  font-size: 16px;
+  line-height: 1em;
+  margin: 5px 0;
+}
+.news-section .dd-small {
+  font-size: 12px;
+  line-height: 1em;
+}
+
+/* スライダー*/
+.slick-slider {
+  position: fixed;}
+.slider {
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  overflow: hidden; 
+}
+.slick-img img {
+  width: 100%; 
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3); 
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+ }
+ .slide-container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slide-wrapper {
+display: flex;
+animation: slide-flow 60s infinite linear 1s both;
+}
+.slide{
+width: 225px;
+object-fit:cover;
+border-right: solid 5px #000;
+}
+@keyframes slide-flow {
+   0% {transform: translateX(0);}
+100% {transform: translateX(-100%);}
+}
+
+ /* レスポンシブ*/
+
+@media screen and (max-width: 768px){
+*{
+  box-sizing: border-box;
+}
+html{
+  display: none;
+}
+  body{
+  width: 100%;
+  overflow-x: hidden;
+}
+.dt-dd-box{
+width: auto;
+}
+
+.flex{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo--sp{
+  display:block;
+position: absolute;
+left: 50%;
+translate: -50%;
+top: 0;
+width: auto;}
+
+.main-section .inner .flex{
+  text-align: center;
+}
+.top__mainvisual {
+  width: 100%;
+  height:300px;
+  font-size: 0;
+ color: transparent;
+  line-height: 0;}
+
+.products-section {
+  text-align: center;
+  padding:0 10px;
+}
+
+
+.products-section h1{
+  font-size: 42px;
+}
+.products-contena__ul img{
+width: 50%;
+}
+.news-section {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.main-section .inner .flex {
+  text-align: start;
+}
+
+.news-section h1 {
+  writing-mode:horizontal-tb;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.news-section .inner {
+  background-color: #000;
+  padding: 10px 0 10px;
+}
+.news-section dt, .news-section dd {
+  width: auto;
+}}

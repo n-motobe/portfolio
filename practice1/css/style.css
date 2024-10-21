@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 90%;
+  transition: all 0.8s;
+}
+
+body {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    "Hiragino Sans", Meiryo;
+  font-size: 16px;
+  line-height: 18.4px;
+  color: #333;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  width: 1110px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+/* ------------
+ヘッダー
+--------------- */
+header {
+  text-align: center;
+}
+.header-logo {
+  margin: 50px auto;
+}
+
+/* ------------
+ナビゲーション
+--------------- */
+nav .flex {
+  justify-content: center;
+  gap: 80px;
+}
+nav ul li p {
+  font-size: 18px;
+  margin: 40px auto 90px;
+}
+
+/* ------------
+コンセプト
+--------------- */
+.concept-section {
+  align-items: center;
+}
+.concept {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.concept-photo {
+  margin-right: 40px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: bold;
+  color: #24a8bf;
+}
+.concept-section h2 {
+  margin-bottom: 30px;
+}
+
+.bold-text {
+  font-weight: bold;
+  line-height: 29px;
+}
+
+/* ------------
+ブログ
+--------------- */
+.blog-section {
+  margin-top: 100px;
+  text-align: center;
+}
+.blog-section .flex {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.blog-section h2 {
+  margin-bottom: 8px;
+}
+.blog {
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.blog-contena {
+  width: 350px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.blog-photo {
+  width: 350px;
+  height: 180px;
+}
+.blog-title {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.blog-date {
+  font-size: 12px;
+  line-height: 14px;
+}
+.blog-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 250px;
+  height: 51px;
+  border: #24a8bf 1px solid;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.blog-btn p {
+  display: inline-block;
+  line-height: 40px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 15px;
+  color: #24a8bf;
+  line-height: 15px;
+  margin: 18px auto;
+}
+.triangle-icon {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  translate: 0 -50%;
+}
+
+/* ------------
+フッター
+--------------- */
+footer {
+  background-color: #333;
+  height: 220px;
+  text-align: center;
+}
+footer img {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.copy {
+  display: inline-block;
+  color: #8b8b8b;
+  font-size: 12px;
+  line-height: 13.8px;
+}
+
+/* ------------
+レスポンシブ
+--------------- */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  .inner {
+    width: auto;
+  }
+
+  /* ヘッダー */
+  .header-logo {
+    width: 60vw;
+    height: auto;
+    max-width: 280px;
+  }
+  /* ナブ */
+  nav .flex {
+    justify-content: space-around;
+    gap: 0;
+  }
+  nav ul li p {
+    font-size: 16px;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* コンセプト */
+  .concept-section {
+    display: block;
+    padding: 0 20px;
+  }
+  .concept-photo {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .concept-text {
+    padding: 0 8%;
+  }
+
+  .concept {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .concept-section h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .bold-text {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  /* ブログ */
+  .blog-contena {
+    width: auto;
+  }
+  .blog-section .flex {
+    display: block;
+    padding: 0 20px;
+  }
+  .concept-section h2 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .blog {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .blog-btn {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 220px;
+    margin-bottom: 50px;
+  }
+  .blog-btn p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .blog-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  footer {
+    height: auto;
+  }
+  .footer-logo {
+    width: 60vw;
+    height: auto;
+    max-width: 180px;
+  }
+  .copy {
+    margin-bottom: 20px;
+  }
+}
